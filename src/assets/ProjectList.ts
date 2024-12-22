@@ -14,8 +14,8 @@ const projects = [
     title: "My Portfolio",
     description: "My portfolio website that you're on right now!",
     tech: [frontend[3], frontend[8], frontend[6]],
-    siteLink: "http://localhost:5173/",
-    repoLink: "a"
+    siteLink: "",
+    repoLink: "https://github.com/ChetManalo/portfolio"
   },
 ]
 

@@ -11,7 +11,7 @@ const Resume = () => {
   const { theme } = useContext(ThemeProviderContext);
   const getFilePluginInstance = getFilePlugin();
   const defaultLayoutPluginInstance = defaultLayoutPlugin({
-    sidebarTabs: (defaultTabs) => [],
+    sidebarTabs: () => [],
   });
 
   return (
