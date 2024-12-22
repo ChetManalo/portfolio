@@ -1,0 +1,44 @@
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 1rem 13rem 1rem;
+  font-size: 1.5rem;
+  background: var(--secondaryBackground);
+  background-image: url("/overlapping-circlesLight.svg");
+
+  >section {
+    h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    span {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      border-radius: 25px;
+      padding: 0.3rem 0.6rem;
+      font-size: 0.7em;
+      font-weight: bold;
+      cursor: default;
+      color: #f4f4f4;
+
+      svg {
+        width: 25px;
+      }
+    }
+  }
+}
+
+html.dark {
+  #skills {
+    background-image: url("/overlapping-circles.svg");
+  }
+}

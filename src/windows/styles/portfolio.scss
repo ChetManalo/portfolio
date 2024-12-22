@@ -1,0 +1,129 @@
+#portfolio {
+  height: 100%;
+  position: relative;
+
+  >svg {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 2rem;
+    z-index: 11;
+  }
+
+  nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: calc(100svh - 35px);
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    top: -100svh;
+    left: 0;
+    background: linear-gradient(var(--thirdBackground), var(--secondaryBackground));
+    transition: all 350ms ease-out;
+    z-index: 1;
+
+    ul {
+      list-style: none;
+
+      li {
+        margin: 2rem 0;
+
+        a {
+          position: relative;
+          display: inline-block;
+          font-size: 3rem;
+          font-weight: bold;
+          color: var(--text);
+          text-decoration: none;
+          transition: all 250ms;
+
+          &::after {
+            content: "";
+            position: absolute;
+            height: 8px;
+            width: 0%;
+            top: 100%;
+            right: 0;
+            background: var(--accent);
+            transition: width 250ms;
+          }
+
+          &:hover, &.active, &:focus {
+            color: var(--accent);
+
+            &::after {
+              width: 100%;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  > section {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    will-change: transform;
+  }
+}
+
+@media (min-width: 1024px) {
+  #portfolio {
+    display: flex;
+    width: 900px;
+    height: 500px;
+
+    > section {
+      &::-webkit-scrollbar {
+        width: 0.5rem;
+      }
+       
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--mainBackground);
+        border-radius: 25px;
+      }
+    }
+
+    nav {
+      position: initial;
+      transition: none;
+      min-width: 343px;
+      max-width: 343px;
+      padding-top: 1rem;
+      height: 100%;
+    }
+
+    >svg {
+      display: none;
+    }
+
+    #about {
+      width: 100%;
+      font-size: 2.5rem;
+      padding-top: 5rem;
+    }
+  
+    #projects {
+      flex-direction: row;
+      align-items: start;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+
+    #skills {
+      align-items: center;
+      justify-content: start;
+      padding: 1rem;
+
+      div {
+        gap: 1rem;
+      }
+    }
+  }
+}

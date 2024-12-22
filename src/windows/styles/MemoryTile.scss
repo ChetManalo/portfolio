@@ -1,0 +1,108 @@
+#gameContainer {
+  padding: 1rem 1rem 0 1rem;
+  background: var(--secondaryBackground);
+  height: 100%;
+  min-width: 320px;
+
+  #game {
+    display: grid;
+    gap: 0.3rem;
+    width: 100%;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .tile {
+    background: var(--mainBackground);
+    transition: background 250ms, transform 100ms;
+    aspect-ratio: 1 / 1;
+    border: 2px solid var(--thirdBackground);
+  }
+
+  #scores {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem 0.5rem 1rem;
+  }
+
+  #settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0 1rem 0;
+    gap: 1rem;
+    pointer-events: all !important;
+    height: 90px;
+    
+    div {
+      height: 100%;
+
+      &:nth-child(2) {
+        flex-grow: 1;
+      }
+    }
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      text-align: center;
+      margin-bottom: 4px;
+    }
+
+    select {
+      background: var(--mainBackground);
+      color: var(--text);
+      border: none;
+      padding: 0.4rem 0.3rem;
+    }
+
+    button {
+      display: block;
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+      color: var(--text);
+      background: var(--mainBackground);
+      transition: background 250ms ease-in-out, box-shadow 150ms ease-in-out;
+      border: none;
+      font-weight: bold;
+      box-shadow: none !important;
+    }
+  }
+
+  .red {
+    background: #FF0040 !important;
+    box-shadow: 0px 0px 5px 1px #FF0040;
+    border: none;
+  }
+  
+  .green {
+    background: #00FF15 !important;
+    box-shadow: 0px 0px 5px 1px #00FF15;
+    border: none;
+  }
+
+  .blue {
+    background: #0095FF !important;
+    box-shadow: 0px 0px 5px 1px #0095FF;
+    border: none;
+  }
+
+  .purple {
+    background: #6A00FF !important;
+    box-shadow: 0px 0px 5px 1px #6A00FF;
+    border: none;
+  }
+  
+  .orange {
+    background: #FF9500 !important;
+    box-shadow: 0px 0px 5px 1px #FF9500;
+    border: none;
+  }
+
+  .pink {
+    background: #FF00FF !important;
+    box-shadow: 0px 0px 5px 1px #FF00FF;
+    border: none;
+  }
+}

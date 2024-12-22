@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --text: #222;
+  --mainBackground: #f9f9f9;
+  --secondaryBackground: #e6e6e6;
+  --thirdBackground: #dcdcdc;
+  --accent: #9A4CC0;
+}
+
+html.dark {
+  --text: #f4f4f4;
+  --mainBackground: #181818;
+  --secondaryBackground: #111;
+  --thirdBackground: #0f0f0f;
+  --accent: #7a1cac;
+
+  body {
+    background: url("/low-poly-grid.svg") no-repeat center center/cover;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+  background: url("/low-poly-gridLight.svg") no-repeat center center/cover;
+}
+
+#root, main {
+  height: 100%;
+}
+
+main {
+  >nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    >nav {
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 1.5rem;
+    }
+  }
+}
