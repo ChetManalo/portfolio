@@ -2,7 +2,7 @@ import { frontend } from "./SkillList";
 
 const projects = [
   {
-    img: "hdd.png",
+    img: "hdd.webp",
     title: "Honorable Discharge Dumpsters",
     description: "A local dumpster rental business site that integrates Square for online dumpster rentals.",
     tech: [frontend[4], frontend[7], frontend[8]],
