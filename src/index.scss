@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --text: #222;
-  --mainBackground: #f9f9f9;
-  --secondaryBackground: #e6e6e6;
-  --thirdBackground: #dcdcdc;
-  --accent: #9A4CC0;
-}
-
-html.dark {
   --text: #f4f4f4;
   --mainBackground: #181818;
   --secondaryBackground: #111;
   --thirdBackground: #0f0f0f;
   --accent: #7a1cac;
+}
+
+html.light {
+  --text: #222;
+  --mainBackground: #f9f9f9;
+  --secondaryBackground: #e6e6e6;
+  --thirdBackground: #dcdcdc;
+  --accent: #9A4CC0;
 
   body {
-    background: url("/low-poly-grid.svg") no-repeat center center/cover;
+    background: url("/low-poly-gridLight.svg") no-repeat center center/cover;
   }
 }
 
@@ -37,7 +37,7 @@ body {
   width: 100vw;
   overflow: hidden;
   font-family: "Open Sans", sans-serif;
-  background: url("/low-poly-gridLight.svg") no-repeat center center/cover;
+  background: url("/low-poly-grid.svg") no-repeat center center/cover;
 }
 
 #root, main {

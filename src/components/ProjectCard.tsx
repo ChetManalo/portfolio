@@ -1,9 +1,12 @@
 import "./styles/projectCard.scss";
 
-const ProjectCard = ({ img, title, description, tech, siteLink, repoLink }: Project) => {
+const ProjectCard = ({ img, imgBlur, title, description, tech, siteLink, repoLink }: Project) => {
   return (
     <article>
-      <img src={img} alt={title} />
+      <div id="projectImage">
+        <img src={imgBlur} alt={title} />
+        <img src={img} alt={title} />
+      </div>
       <div>
         <h2>{title}</h2>
         <p>{description}</p>

@@ -12,6 +12,7 @@ const Projects = () => {
             return <ProjectCard
               key={project.title + Math.random()}
               img={project.img}
+              imgBlur={project.imgBlur}
               title={project.title}
               description={project.description}
               tech={project.tech}
@@ -26,6 +27,7 @@ const Projects = () => {
             return <ProjectCard
               key={project.title + Math.random()}
               img={project.img}
+              imgBlur={project.imgBlur}
               title={project.title}
               description={project.description}
               tech={project.tech}

@@ -6,6 +6,7 @@ export {};
 declare global {
   interface Project {
     img: string
+    imgBlur: string
     title: string
     description: string
     tech: Skill[]
