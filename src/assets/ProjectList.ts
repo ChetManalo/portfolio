@@ -1,4 +1,4 @@
-import { frontend, backend } from "./SkillList";
+import { frontend } from "./SkillList";
 
 const projects = [
   {
@@ -18,15 +18,6 @@ const projects = [
     tech: [frontend[3], frontend[8], frontend[6]],
     siteLink: "",
     repoLink: "https://github.com/ChetManalo/portfolio"
-  },
-  {
-    img: "/projectImages/searchinator.webp",
-    imgBlur: "/projectImages/searchinatorBlur.webp",
-    title: "Spotify Searchinator",
-    description: "The Spotify Searchinator allows you to search for songs, artists, and albums.",
-    tech: [frontend[3], frontend[7], frontend[8], backend[0], backend[1]],
-    siteLink: "https://pp3-spotify-production.up.railway.app/",
-    repoLink: "https://github.com/ManaloChet-FS/PP3-Spotify"
   },
 ]
 
