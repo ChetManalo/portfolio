@@ -7,8 +7,8 @@ const projects = [
     title: "Honorable Discharge Dumpsters",
     description: "A local dumpster rental business site that integrates Square for online dumpster rentals.",
     tech: [frontend[4], frontend[7], frontend[8]],
-    siteLink: "https://www.honorabledischargedumpsters.com/",
-    repoLink: ""
+    siteLink: "",
+    repoLink: "https://github.com/ChetManalo/honorable-discharge-dumpsters"
   },
   {
     img: "/projectImages/portfolio.webp",
@@ -19,6 +19,15 @@ const projects = [
     siteLink: "",
     repoLink: "https://github.com/ChetManalo/portfolio"
   },
+  {
+    img: "/projectImages/nuclear.webp",
+    imgBlur: "",
+    title: "Nuclear Transport",
+    description: "Made for Brackeys Game Jam 2025.1",
+    tech: [],
+    siteLink: "https://corputz.itch.io/nuclear-transport",
+    repoLink: ""
+  }
 ]
 
 export default projects;
