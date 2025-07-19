@@ -16,7 +16,8 @@ import { SiNextdotjs,
         SiLinux,
         SiPostman,
         SiHtml5,
-        SiCss3} from "react-icons/si";
+        SiCss3,
+        SiWordpress} from "react-icons/si";
 
 const frontend: Skill[] = [
   { name: "HTML", icon: SiHtml5, color: "#e34c26"}, // 0
@@ -45,6 +46,7 @@ const tools: Skill[] = [
   { name: "Git", icon: SiGit, color: "#df4c37"}, // 3
   { name: "Linux", icon: SiLinux, color: "#CC8930"}, // 4
   { name: "Postman", icon: SiPostman, color: "#F15A24"}, // 5
+  { name: "WordPress", icon: SiWordpress, color: "#21759B" }, // 6
 ]
 
 export {
