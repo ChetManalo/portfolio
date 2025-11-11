@@ -12,6 +12,15 @@ const projects = [
     repoLink: ""
   },
   {
+    img: "/projectImages/gofa.png",
+    imgBlur: "",
+    title: "GofA Fishing Charters",
+    description: "A website for a fishing charter service made using WordPress.",
+    tech: [tools[6], frontend[1]],
+    siteLink: "https://gofacharters.com/",
+    repoLink: ""
+  },
+  {
     img: "/projectImages/hdd.webp",
     imgBlur: "/projectImages/hddBlur.webp",
     title: "Honorable Discharge Dumpsters",
@@ -21,15 +30,6 @@ const projects = [
     repoLink: "https://github.com/ChetManalo/honorable-discharge-dumpsters"
   },
   {
-    img: "/projectImages/portfolio.webp",
-    imgBlur: "/projectImages/portfolioBlur.webp",
-    title: "My Portfolio",
-    description: "My portfolio website that you're on right now!",
-    tech: [frontend[3], frontend[8], frontend[6]],
-    siteLink: "",
-    repoLink: "https://github.com/ChetManalo/portfolio"
-  },
-  {
     img: "/projectImages/nuclear.webp",
     imgBlur: "",
     title: "Nuclear Transport",
@@ -37,6 +37,15 @@ const projects = [
     tech: [],
     siteLink: "https://corputz.itch.io/nuclear-transport",
     repoLink: ""
+  },
+  {
+    img: "/projectImages/portfolio.webp",
+    imgBlur: "/projectImages/portfolioBlur.webp",
+    title: "My Portfolio",
+    description: "My portfolio website that you're on right now!",
+    tech: [frontend[3], frontend[8], frontend[6]],
+    siteLink: "",
+    repoLink: "https://github.com/ChetManalo/portfolio"
   },
 ]
 
