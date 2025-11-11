@@ -1,6 +1,16 @@
 import { frontend } from "./SkillList";
+import { tools } from "./SkillList";
 
 const projects = [
+  {
+    img: "/projectImages/brandone.webp",
+    imgBlur: "",
+    title: "BrandOne Storage",
+    description: "A website for a door-to-door storage service made using WordPress.",
+    tech: [tools[6], tools[2], frontend[1]],
+    siteLink: "https://brandonestorage.com/",
+    repoLink: ""
+  },
   {
     img: "/projectImages/hdd.webp",
     imgBlur: "/projectImages/hddBlur.webp",
@@ -27,7 +37,7 @@ const projects = [
     tech: [],
     siteLink: "https://corputz.itch.io/nuclear-transport",
     repoLink: ""
-  }
+  },
 ]
 
 export default projects;
